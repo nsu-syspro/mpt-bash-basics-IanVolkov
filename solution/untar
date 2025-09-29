@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+dname="${1}.unpacked"
+
+rm -fr "$dname"
+mkdir "$dname"
+tar -xf "$1" --directory "$dname"
