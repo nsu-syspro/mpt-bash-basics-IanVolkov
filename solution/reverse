@@ -7,5 +7,5 @@ while IFS= read -r input_line; do
 done 
 
 for ((i = 1 ; i <= ${#arr[@]} ; i++)); do
-  echo "${arr[-${i}]}"
+  echo "${arr[-i]}"
 done
