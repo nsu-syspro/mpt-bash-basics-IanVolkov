@@ -2,10 +2,10 @@
 
 i=0
 while IFS= read -r input_line; do
-  arr[$i]="$input_line"
+  arr[i]="$input_line"
   ((i += 1))
 done 
 
-for ((i = 1 ; i <= ${#arr[@]} ; i++)); do
+for ((i = 1 ; i <= ${#arr[@]}; i++)); do
   echo "${arr[-i]}"
 done
