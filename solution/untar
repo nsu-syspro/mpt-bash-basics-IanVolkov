@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+dname="${1}.unpacked"
+
+if [ ! -e "${dname}" ]; then
+  mkdir "${dname}"
+fi
+tar -xf "$1" --directory "$dname"

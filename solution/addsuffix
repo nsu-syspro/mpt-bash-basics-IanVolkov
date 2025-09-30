@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+for ((i = 2; i <= $#; i++)); do
+  echo "${!i}"
+  mv "${!i}" "${!i}${1}"
+done;
+
